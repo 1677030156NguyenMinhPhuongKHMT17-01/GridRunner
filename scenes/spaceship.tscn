@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cspaceship123"]
+
+[ext_resource type="Script" uid="uid://cxhrsp86ppibp" path="res://scripts/spaceship.gd" id="1_ship"]
+
+[node name="Spaceship" type="Node3D" unique_id=1619057487]
+script = ExtResource("1_ship")
+
+[node name="Body" type="MeshInstance3D" parent="." unique_id=562629019]
+
+[node name="WingLeft" type="MeshInstance3D" parent="." unique_id=312789598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0, 0.2)
+
+[node name="WingRight" type="MeshInstance3D" parent="." unique_id=2071628949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0, 0.2)
+
+[node name="Tail" type="MeshInstance3D" parent="." unique_id=576347818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0.8)
+
+[node name="Engine" type="MeshInstance3D" parent="." unique_id=697526054]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)

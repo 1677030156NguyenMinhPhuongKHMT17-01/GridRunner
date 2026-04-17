@@ -1,0 +1,611 @@
+[gd_scene format=3 uid="uid://mainmenu123"]
+
+[ext_resource type="Script" uid="uid://2jfucqgbjatr" path="res://scripts/main_menu.gd" id="1_menu"]
+
+[node name="MainMenu" type="Control" unique_id=241337050]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_menu")
+
+[node name="Background" type="ColorRect" parent="." unique_id=2025310294]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.02, 0.08, 1)
+
+[node name="StarsContainer" type="Control" parent="." unique_id=2044311199]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="GridLines" type="Control" parent="." unique_id=1960105059]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Line1" type="ColorRect" parent="GridLines" unique_id=1259089033]
+layout_mode = 1
+offset_left = 200.0
+offset_right = 202.0
+offset_bottom = 800.0
+color = Color(0, 0.4, 0.6, 0.3)
+
+[node name="Line2" type="ColorRect" parent="GridLines" unique_id=1270407355]
+layout_mode = 1
+offset_left = 400.0
+offset_right = 402.0
+offset_bottom = 800.0
+color = Color(0, 0.4, 0.6, 0.3)
+
+[node name="Line3" type="ColorRect" parent="GridLines" unique_id=416641085]
+layout_mode = 1
+offset_left = 600.0
+offset_right = 602.0
+offset_bottom = 800.0
+color = Color(0, 0.4, 0.6, 0.3)
+
+[node name="Line4" type="ColorRect" parent="GridLines" unique_id=100934764]
+layout_mode = 1
+offset_left = 800.0
+offset_right = 802.0
+offset_bottom = 800.0
+color = Color(0, 0.4, 0.6, 0.3)
+
+[node name="Line5" type="ColorRect" parent="GridLines" unique_id=2107454311]
+layout_mode = 1
+offset_left = 1000.0
+offset_right = 1002.0
+offset_bottom = 800.0
+color = Color(0, 0.4, 0.6, 0.3)
+
+[node name="Line6" type="ColorRect" parent="GridLines" unique_id=1928758990]
+layout_mode = 1
+offset_left = 1200.0
+offset_right = 1202.0
+offset_bottom = 800.0
+color = Color(0, 0.4, 0.6, 0.3)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=531626925]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -260.0
+offset_right = 300.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer" unique_id=1224116246]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.4, 0.4, 0.4, 0.5)
+theme_override_font_sizes/font_size = 72
+text = "GRIDRUNNER"
+horizontal_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="VBoxContainer" unique_id=1827879708]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "Hand Tracking Space Game"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="VBoxContainer" unique_id=651999323]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="ButtonContainer" type="VBoxContainer" parent="VBoxContainer" unique_id=1166957912]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="StartButton" type="Button" parent="VBoxContainer/ButtonContainer" unique_id=1781862789]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "🚀  BẮT ĐẦU"
+
+[node name="CustomizeButton" type="Button" parent="VBoxContainer/ButtonContainer" unique_id=1855892802]
+visible = false
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "🛠️  (ẨN)"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer/ButtonContainer" unique_id=319189217]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "⚙️  CÀI ĐẶT"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer/ButtonContainer" unique_id=178946190]
+custom_minimum_size = Vector2(300, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "🚪  THOÁT"
+
+[node name="CustomizerPanel" type="Panel" parent="." unique_id=806289729]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -480.0
+offset_top = -300.0
+offset_right = 480.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CustomizerPanel" unique_id=2012415221]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 14
+
+[node name="CustomizerTitle" type="Label" parent="CustomizerPanel/VBoxContainer" unique_id=882328488]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 34
+text = "CHỌN PHI THUYỀN TRƯỚC KHI XUẤT PHÁT"
+horizontal_alignment = 1
+
+[node name="CustomizerHint" type="Label" parent="CustomizerPanel/VBoxContainer" unique_id=2015224664]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "Chọn part bằng nút ◀ ▶ | Đổi màu nhanh: phím 5-8 (Shift để lùi)"
+horizontal_alignment = 1
+
+[node name="PreviewContainer" type="SubViewportContainer" parent="CustomizerPanel/VBoxContainer" unique_id=1991567629]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+size_flags_vertical = 3
+stretch = true
+
+[node name="ShipPreviewViewport" type="SubViewport" parent="CustomizerPanel/VBoxContainer/PreviewContainer" unique_id=877878884]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(2, 300)
+render_target_update_mode = 0
+
+[node name="PreviewRoot" type="Node3D" parent="CustomizerPanel/VBoxContainer/PreviewContainer/ShipPreviewViewport" unique_id=1665724036]
+
+[node name="PreviewLight" type="DirectionalLight3D" parent="CustomizerPanel/VBoxContainer/PreviewContainer/ShipPreviewViewport/PreviewRoot" unique_id=788703073]
+transform = Transform3D(0.90630776, 0.24240388, -0.34618863, 0, 0.81915206, 0.57357645, 0.42261827, -0.5198368, 0.74240386, 0, 0, 0)
+light_energy = 1.8
+shadow_enabled = true
+
+[node name="PreviewFill" type="OmniLight3D" parent="CustomizerPanel/VBoxContainer/PreviewContainer/ShipPreviewViewport/PreviewRoot" unique_id=1298986213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 2.8)
+light_color = Color(0.4, 0.8, 1, 1)
+light_energy = 1.2
+omni_range = 9.0
+
+[node name="PreviewCamera" type="Camera3D" parent="CustomizerPanel/VBoxContainer/PreviewContainer/ShipPreviewViewport/PreviewRoot" unique_id=329388682]
+transform = Transform3D(1, 0, 0, 0, 0.9945219, 0.104528464, 0, -0.104528464, 0.9945219, 0, 0.65, 4.8)
+current = true
+fov = 38.0
+
+[node name="PartRows" type="VBoxContainer" parent="CustomizerPanel/VBoxContainer" unique_id=1750047695]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="BodyRow" type="HBoxContainer" parent="CustomizerPanel/VBoxContainer/PartRows" unique_id=1482594649]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="BodyLabel" type="Label" parent="CustomizerPanel/VBoxContainer/PartRows/BodyRow" unique_id=578797924]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Body"
+
+[node name="BodyPrevButton" type="Button" parent="CustomizerPanel/VBoxContainer/PartRows/BodyRow" unique_id=446090303]
+custom_minimum_size = Vector2(44, 36)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "◀"
+
+[node name="BodyValueLabel" type="Label" parent="CustomizerPanel/VBoxContainer/PartRows/BodyRow" unique_id=1883126333]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+text = "-"
+
+[node name="BodyNextButton" type="Button" parent="CustomizerPanel/VBoxContainer/PartRows/BodyRow" unique_id=540676193]
+custom_minimum_size = Vector2(44, 36)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "▶"
+
+[node name="WingRow" type="HBoxContainer" parent="CustomizerPanel/VBoxContainer/PartRows" unique_id=1164996147]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="WingLabel" type="Label" parent="CustomizerPanel/VBoxContainer/PartRows/WingRow" unique_id=612150772]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Wings"
+
+[node name="WingPrevButton" type="Button" parent="CustomizerPanel/VBoxContainer/PartRows/WingRow" unique_id=1762967606]
+custom_minimum_size = Vector2(44, 36)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "◀"
+
+[node name="WingValueLabel" type="Label" parent="CustomizerPanel/VBoxContainer/PartRows/WingRow" unique_id=1106480788]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+text = "-"
+
+[node name="WingNextButton" type="Button" parent="CustomizerPanel/VBoxContainer/PartRows/WingRow" unique_id=706742500]
+custom_minimum_size = Vector2(44, 36)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "▶"
+
+[node name="TailRow" type="HBoxContainer" parent="CustomizerPanel/VBoxContainer/PartRows" unique_id=333784030]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TailLabel" type="Label" parent="CustomizerPanel/VBoxContainer/PartRows/TailRow" unique_id=336575766]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Tail"
+
+[node name="TailPrevButton" type="Button" parent="CustomizerPanel/VBoxContainer/PartRows/TailRow" unique_id=2053137700]
+custom_minimum_size = Vector2(44, 36)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "◀"
+
+[node name="TailValueLabel" type="Label" parent="CustomizerPanel/VBoxContainer/PartRows/TailRow" unique_id=2128217061]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+text = "-"
+
+[node name="TailNextButton" type="Button" parent="CustomizerPanel/VBoxContainer/PartRows/TailRow" unique_id=1131641292]
+custom_minimum_size = Vector2(44, 36)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "▶"
+
+[node name="EngineRow" type="HBoxContainer" parent="CustomizerPanel/VBoxContainer/PartRows" unique_id=2094741045]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="EngineLabel" type="Label" parent="CustomizerPanel/VBoxContainer/PartRows/EngineRow" unique_id=1409327063]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Engine"
+
+[node name="EnginePrevButton" type="Button" parent="CustomizerPanel/VBoxContainer/PartRows/EngineRow" unique_id=644291171]
+custom_minimum_size = Vector2(44, 36)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "◀"
+
+[node name="EngineValueLabel" type="Label" parent="CustomizerPanel/VBoxContainer/PartRows/EngineRow" unique_id=1593330063]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+text = "-"
+
+[node name="EngineNextButton" type="Button" parent="CustomizerPanel/VBoxContainer/PartRows/EngineRow" unique_id=171783032]
+custom_minimum_size = Vector2(44, 36)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "▶"
+
+[node name="SummaryLabel" type="Label" parent="CustomizerPanel/VBoxContainer" unique_id=1568138882]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "-"
+horizontal_alignment = 1
+
+[node name="ActionRow" type="HBoxContainer" parent="CustomizerPanel/VBoxContainer" unique_id=2042026419]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="StartFromCustomizerButton" type="Button" parent="CustomizerPanel/VBoxContainer/ActionRow" unique_id=393177176]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "XUẤT PHÁT VỚI TÀU NÀY"
+
+[node name="CustomizerBackButton" type="Button" parent="CustomizerPanel/VBoxContainer/ActionRow" unique_id=239823292]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "← QUAY LẠI"
+
+[node name="SettingsPanel" type="Panel" parent="." unique_id=515281017]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -320.0
+offset_right = 250.0
+offset_bottom = 320.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsPanel" unique_id=754768847]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = -30.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 14
+
+[node name="SettingsTitle" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=607742125]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "CÀI ĐẶT"
+horizontal_alignment = 1
+
+[node name="PresetLabel" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=241697985]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Chế độ điều khiển:"
+
+[node name="PresetOption" type="OptionButton" parent="SettingsPanel/VBoxContainer" unique_id=350625907]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+
+[node name="GripModeLabel" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=2100246037]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Cách cầm vô lăng:"
+
+[node name="GripModeOption" type="OptionButton" parent="SettingsPanel/VBoxContainer" unique_id=140522934]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+
+[node name="SensitivityLabel" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=256062844]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Độ nhạy:"
+
+[node name="SensitivityContainer" type="HBoxContainer" parent="SettingsPanel/VBoxContainer" unique_id=299066404]
+layout_mode = 2
+
+[node name="SensitivitySlider" type="HSlider" parent="SettingsPanel/VBoxContainer" unique_id=1986789859]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+min_value = 0.5
+max_value = 5.0
+step = 0.1
+value = 2.0
+
+[node name="SensitivityValue" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=1062413946]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "2.0"
+horizontal_alignment = 1
+
+[node name="MasterVolumeLabel" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=1153232082]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Âm lượng tổng (Master %):"
+
+[node name="MasterVolumeSlider" type="HSlider" parent="SettingsPanel/VBoxContainer" unique_id=2117342847]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+min_value = 1.0
+max_value = 100.0
+step = 1.0
+value = 100.0
+
+[node name="MasterVolumeValue" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=698661294]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "100%"
+horizontal_alignment = 1
+
+[node name="MusicVolumeLabel" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=2112170011]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Âm lượng nhạc (Music %):"
+
+[node name="MusicVolumeSlider" type="HSlider" parent="SettingsPanel/VBoxContainer" unique_id=1062206486]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+min_value = 1.0
+max_value = 100.0
+step = 1.0
+value = 70.0
+
+[node name="MusicVolumeValue" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=1702965306]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "70%"
+horizontal_alignment = 1
+
+[node name="SfxVolumeLabel" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=236023513]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Âm lượng hiệu ứng (SFX %):"
+
+[node name="SfxVolumeSlider" type="HSlider" parent="SettingsPanel/VBoxContainer" unique_id=1672354219]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+min_value = 1.0
+max_value = 100.0
+step = 1.0
+value = 85.0
+
+[node name="SfxVolumeValue" type="Label" parent="SettingsPanel/VBoxContainer" unique_id=1002942496]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "85%"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="SettingsPanel/VBoxContainer" unique_id=126247686]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="SettingsPanel/VBoxContainer" unique_id=2109475360]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "← QUAY LẠI"
+
+[node name="VersionLabel" type="Label" parent="." unique_id=606958312]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -40.0
+offset_right = -20.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "v1.0 - Hand Tracking"
+horizontal_alignment = 2
+
+[node name="InstructionLabel" type="Label" parent="." unique_id=2010331828]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -80.0
+offset_right = 200.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "Nhấn BẮT ĐẦU để vào khu tùy chỉnh tàu, rồi xác nhận để đua"
+horizontal_alignment = 1
+
+[node name="OpeningCrawlOverlay" type="ColorRect" parent="." unique_id=1887803411]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.96)
+
+[node name="CrawlTitle" type="Label" parent="OpeningCrawlOverlay" unique_id=714507686]
+layout_mode = 1
+anchors_preset = 10
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -340.0
+offset_top = 44.0
+offset_right = 340.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(1, 0.86, 0.25, 1)
+theme_override_font_sizes/font_size = 42
+text = "EPISODE I\nNEON GRID BREACH"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CrawlBody" type="Label" parent="OpeningCrawlOverlay" unique_id=1531752734]
+layout_mode = 1
+anchors_preset = 10
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -430.0
+offset_top = 760.0
+offset_right = 430.0
+offset_bottom = 1420.0
+theme_override_colors/font_color = Color(1, 0.86, 0.25, 1)
+theme_override_font_sizes/font_size = 30
+text = "Opening crawl text"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="CrawlHint" type="Label" parent="OpeningCrawlOverlay" unique_id=1280119771]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -260.0
+offset_top = -56.0
+offset_right = 260.0
+offset_bottom = -24.0
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_font_sizes/font_size = 16
+text = "SPACE / ENTER để bỏ qua"
+horizontal_alignment = 1

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d1ib30424prpf"]
+
+[ext_resource type="PackedScene" uid="uid://blnscdhcxvpmk" path="res://addons/imjp94.yafsm/scenes/condition_editors/ValueConditionEditor.tscn" id="1"]
+[ext_resource type="Script" uid="uid://va2n7mt4m0wx" path="res://addons/imjp94.yafsm/scenes/condition_editors/IntegerConditionEditor.gd" id="2"]
+
+[node name="IntegerConditionEditor" unique_id=1067525999 instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="MarginContainer" parent="." index="2"]
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="IntegerValue" type="LineEdit" parent="MarginContainer" index="0" unique_id=1252712220]
+layout_mode = 2
+size_flags_horizontal = 3

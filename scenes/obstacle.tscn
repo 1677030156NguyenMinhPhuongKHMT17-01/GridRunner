@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cobstacle456"]
+
+[ext_resource type="Script" uid="uid://dcaoculb7ncgf" path="res://scripts/obstacle.gd" id="1_obs"]
+
+[node name="Obstacle" type="Node3D" unique_id=597074479]
+script = ExtResource("1_obs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=457810693]
+
+[node name="CollisionArea" type="Area3D" parent="." unique_id=1059600813]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CollisionArea" unique_id=1702624990]

@@ -1,0 +1,21 @@
+@tool
+extends EditorPlugin
+
+
+func _enable_plugin() -> void:
+	add_autoload_singleton("soundwaveMusicManager", "res://addons/soundwave_music_manager/soundwave_music_manager.tscn")
+	if AudioServer.get_bus_index("music") == -1:
+		print("Please create a <music> bus")
+
+func _disable_plugin() -> void:
+	remove_autoload_singleton("soundwaveMusicManager")
+
+
+func _enter_tree() -> void:
+	# Initialization of the plugin goes here.
+	pass
+
+
+func _exit_tree() -> void:
+	# Clean-up of the plugin goes here.
+	pass

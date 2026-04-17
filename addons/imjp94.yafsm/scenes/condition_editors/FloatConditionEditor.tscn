@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://doq6lkdh20j15"]
+
+[ext_resource type="PackedScene" uid="uid://blnscdhcxvpmk" path="res://addons/imjp94.yafsm/scenes/condition_editors/ValueConditionEditor.tscn" id="1"]
+[ext_resource type="Script" uid="uid://ca0bq0hvgxnx2" path="res://addons/imjp94.yafsm/scenes/condition_editors/FloatConditionEditor.gd" id="2"]
+
+[node name="ValueConditionEditor" unique_id=1235356157 instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="MarginContainer" parent="." index="2"]
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="FloatValue" type="LineEdit" parent="MarginContainer" index="0" unique_id=1570218461]
+layout_mode = 2
+size_flags_horizontal = 3

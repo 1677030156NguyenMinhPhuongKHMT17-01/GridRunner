@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b3b5ivtjmka6b"]
+
+[node name="StackItem" type="PanelContainer" unique_id=1863220174]
+
+[node name="Label" type="Label" parent="." unique_id=819777447]
+layout_mode = 2
+text = "Item"
