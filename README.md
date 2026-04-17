@@ -173,7 +173,6 @@ Khi bật debug mode:
 
 ### Phiên bản Tracker
 - **v2 (Mới - Khuyến nghị)**: CPU-optimized pipeline, adaptive inference scale, One Euro + Kalman smoothing
-- **v1 (Legacy)**: Original implementation, kept for backwards compatibility
 
 ### Điểm được track
 - **Chấm vàng**: Grip point mỗi tay (trung bình thumb_tip + index_tip)
